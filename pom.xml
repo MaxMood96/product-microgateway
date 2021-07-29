@@ -133,10 +133,10 @@
                         </goals>
                         <configuration>
                             <target>
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true" />
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true" />
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true" />
-                                <replaceregexp file="remove-containers.sh" match="micro_gw_version=.*" replace="micro_gw_version=${project.version}" byline="true" />
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true"/>
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true"/>
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true"/>
+                                <replaceregexp file="remove-containers.sh" match="micro_gw_version=.*" replace="micro_gw_version=${project.version}" byline="true"/>
                             </target>
                         </configuration>
                     </execution>
@@ -434,7 +434,7 @@
         <analytics.publisher.client.version>1.0.0</analytics.publisher.client.version>
         <awaitility.version>3.1.2</awaitility.version>
         <apache.httpcomponents.version>4.5.13</apache.httpcomponents.version>
-        <jackson.databind.version>2.10.5.1</jackson.databind.version>
+        <jackson.databind.version>2.12.4</jackson.databind.version>
         <snakeyaml.version>1.26</snakeyaml.version>
     </properties>
 </project>
