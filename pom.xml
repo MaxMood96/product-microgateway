@@ -148,10 +148,10 @@
                         </goals>
                         <configuration>
                             <target>
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true" />
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true" />
-                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true" />
-                                <replaceregexp file="remove-containers.sh" match="micro_gw_version=.*" replace="micro_gw_version=${project.version}" byline="true" />
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true"/>
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true"/>
+                                <replaceregexp file="resources/docker-compose/docker-compose.yaml" match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true"/>
+                                <replaceregexp file="remove-containers.sh" match="micro_gw_version=.*" replace="micro_gw_version=${project.version}" byline="true"/>
                             </target>
                         </configuration>
                     </execution>
@@ -420,7 +420,7 @@
         <gson.version>2.8.6</gson.version>
         <guava.version>30.0-jre</guava.version>
         <io.fabric8.docker.plugin.version>0.34.1</io.fabric8.docker.plugin.version>
-        <io.netty.version>4.1.63.Final</io.netty.version>
+        <io.netty.version>4.1.68.Final</io.netty.version>
         <json.smart.version>2.4.7</json.smart.version>
         <log4j.version>2.13.3</log4j.version>
         <maven.checkstyle.plugin.version>3.0.0</maven.checkstyle.plugin.version>
