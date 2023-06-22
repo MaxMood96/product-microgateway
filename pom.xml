@@ -208,18 +208,18 @@
                         <configuration>
                             <target>
                                 <replaceregexp match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
-                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true" />
+                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true"/>
                             </target>
                         </configuration>
                     </execution>
@@ -662,7 +662,7 @@
         <gson.version>2.8.9</gson.version>
         <guava.version>30.0-jre</guava.version>
         <io.fabric8.docker.plugin.version>0.34.1</io.fabric8.docker.plugin.version>
-        <io.netty.version>4.1.77.Final</io.netty.version>
+        <io.netty.version>4.1.94.Final</io.netty.version>
         <jaeger.exporter.version>1.6.0</jaeger.exporter.version>
         <apache.tomcat.dependency.version>10.0.23</apache.tomcat.dependency.version>
         <java.websocket.version>1.5.3</java.websocket.version>
