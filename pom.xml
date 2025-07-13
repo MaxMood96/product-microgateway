@@ -208,18 +208,18 @@
                         <configuration>
                             <target>
                                 <replaceregexp match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
-                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true" />
+                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true"/>
                             </target>
                         </configuration>
                     </execution>
@@ -705,7 +705,7 @@
         <maven.checkstyle.version>8.18</maven.checkstyle.version>
         <maven.spotbugs.version>4.0.4</maven.spotbugs.version>
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
-        <nimbus.jose.jwt.version>8.0</nimbus.jose.jwt.version>
+        <nimbus.jose.jwt.version>10.0.2</nimbus.jose.jwt.version>
         <org.json.version>3.0.0.wso2v1</org.json.version>
         <os.mvn.plugin.version>1.6.2</os.mvn.plugin.version>
         <otel.alpha.version>1.22.0-alpha</otel.alpha.version>
@@ -725,10 +725,10 @@
         <apictl.version>4.2.0</apictl.version>
         <apim.version>4.2.0-beta</apim.version>
         <grpc.healthProbe.version>0.4.17</grpc.healthProbe.version>
-        <analytics.publisher.client.version>1.2.3</analytics.publisher.client.version>
+        <analytics.publisher.client.version>1.2.4</analytics.publisher.client.version>
         <awaitility.version>4.2.0</awaitility.version>
         <apache.httpcomponents.version>4.5.14</apache.httpcomponents.version>
-        <jackson.databind.version>2.14.1</jackson.databind.version>
+        <jackson.databind.version>2.15.0</jackson.databind.version>
         <exec.maven.plugin.version>3.1.0</exec.maven.plugin.version>
         <googlecode.download.plugin.version>1.6.8</googlecode.download.plugin.version>
         <javax.validation.api.version>1.1.0.Final</javax.validation.api.version>
