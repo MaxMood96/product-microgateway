@@ -208,18 +208,18 @@
                         <configuration>
                             <target>
                                 <replaceregexp match="wso2\/choreo-connect\-router\:.*" replace="wso2/choreo-connect-router:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-adapter\:.*" replace="wso2/choreo-connect-adapter:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
                                 <replaceregexp match="wso2\/choreo-connect\-enforcer\:.*" replace="wso2/choreo-connect-enforcer:${project.version}" byline="true">
-                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml" />
-                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml" />
+                                    <fileset dir="resources/docker-compose" includes="**/docker-compose.yaml"/>
+                                    <fileset dir="resources/k8s-artifacts" includes="**/*deployment.yaml"/>
                                 </replaceregexp>
-                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true" />
+                                <replaceregexp file="dev-scripts/remove-containers.sh" match="cc_version=.*" replace="cc_version=${project.version}" byline="true"/>
                             </target>
                         </configuration>
                     </execution>
@@ -700,7 +700,7 @@
         <slf4j.api.version>1.7.36</slf4j.api.version>
         <json.smart.version>2.4.10</json.smart.version>
         <junit.version>4.13.2</junit.version>
-        <log4j.version>2.19.0</log4j.version>
+        <log4j.version>2.25.3</log4j.version>
         <maven.checkstyle.plugin.version>3.0.0</maven.checkstyle.plugin.version>
         <maven.checkstyle.version>8.18</maven.checkstyle.version>
         <maven.spotbugs.version>4.0.4</maven.spotbugs.version>
